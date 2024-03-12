@@ -1,0 +1,38 @@
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+#a {
+    background-color: red;
+    position: static;
+}
+
+#b {
+    background-color: blue;
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+
+#c {
+    background-color: green;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+#d {
+    background-color: yellow;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+}
+
+#e {
+    background-color: orange;
+    position: sticky;
+    top: 200px;
+    left: 200px;
+}

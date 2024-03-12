@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="MAILTO:nuno.marques@six-factor.com">
+        
+        <fieldset>
+            <legend>informação pessoal</legend>
+            <div>
+                First name:
+                <input type="text" name="fName">
+            </div>
+    
+            <div>
+                Last name:
+                <input type="text" name="lName">
+            </div>
+    
+            <div>
+                <p>Sexo</p>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </div>
+
+            <div>
+                Email:
+                <input type="email" name="email">
+            </div>
+
+            <div>
+                Password
+                <input type="password" name="pw">
+            </div>
+
+            <div>
+                tlmvl
+                <input type="number" name="phone" min="10" max="100">
+            </div>
+        </fieldset>
+        
+
+        <div>
+            <p>Carros</p>
+            <input type="checkbox" name="car" value="Volvo">Volvo
+            <input type="checkbox" name="car" value="Porsche">Porsche
+            <input type="checkbox" name="car" value="Mercedes">Mercedes
+            <input type="checkbox" name="car" value="Bmw">Bmw
+        </div>
+
+        <div>
+            <select name="hair" id="">
+                <option value="blonde">loiro</option>
+                <option value="brown">Castanho</option>
+                <option value="black">Preto</option>
+                <option value="red">Ruivo</option>
+            </select>
+        </div>
+
+        <textarea name="description" cols="30" rows="10"></textarea>
+        
+        <input type="submit" value="Enviar Formulario">
+    </form>
+
+</body>
+</html>

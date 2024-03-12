@@ -1,0 +1,21 @@
+
+
+
+
+body {
+    font-family: "Dancing Script", cursive;
+}
+
+#title {
+    color: blue;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 1rem 0.5rem 1rem rgb(119, 78, 0);
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#paragraph {
+    word-spacing: -3px;
+    text-indent: 75px;
+}

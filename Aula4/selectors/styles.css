@@ -1,0 +1,38 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipe-item, .person-item {
+    background-color: lightblue;
+    color: blue;
+}
+
+.title {
+    font-size: 10rem;
+}
+
+.recipe-item .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: green;
+}
+
+#main-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: red;
+}
+
+.error {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+
+.warning {
+    background-color: orange;
+    font-size: 32px;
+    
+}
+

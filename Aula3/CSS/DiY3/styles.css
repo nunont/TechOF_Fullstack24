@@ -1,0 +1,10 @@
+
+body {
+    background-image: url("https://www.w3schools.com/css/img_lights.jpg");
+    background-repeat: repeat-y;
+}
+
+h1 {
+    color: blue;
+}
+

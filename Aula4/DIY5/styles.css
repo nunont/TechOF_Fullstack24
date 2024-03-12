@@ -1,0 +1,18 @@
+
+div {
+    border: 1px solid black;
+    margin-left: 50px;
+}
+
+h1 {
+    border: 1px groove red;
+    border-radius: 8px;
+    margin: auto;
+    width: 200px;
+}
+
+p {
+    border: 5px dotted black;
+    margin-left: inherit;
+    margin-top: 8px;
+}

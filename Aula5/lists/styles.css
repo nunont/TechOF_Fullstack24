@@ -1,0 +1,12 @@
+
+#l1 {
+    list-style-type: circle;
+}
+
+#l2 {
+    list-style-type: lower-greek;
+}
+
+#l1 {
+    list-style-image: url('dot.png');
+}
