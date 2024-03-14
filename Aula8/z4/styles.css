@@ -1,0 +1,51 @@
+
+body {
+    background-color: teal;
+}
+
+.main {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.main h1{
+    color: white;
+}
+
+.form-area {
+    background-color: tomato;
+    border-radius: 16px;
+    padding: 50px;
+    text-align: left;
+}
+
+.form-area * {
+    margin: 10px 0;
+}
+
+.form-area .big-input {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-area input[type="submit"] {
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .main {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    
+    .form-area {
+        padding: 0px 20px;
+    }
+
+}

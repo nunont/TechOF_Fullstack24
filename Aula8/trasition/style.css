@@ -1,0 +1,32 @@
+#second {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation-name: teste;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    position: absolute;
+}
+
+@keyframes teste {
+    0% {
+        background-color: green;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        right: 0px;
+    }
+    50% {
+        background-color: blue;
+        bottom: 0px;
+    }
+    75% {
+        background-color: red;
+        left: 0px;
+    }
+    100% {
+        background-color: green;
+        top: 0px;
+    }
+}

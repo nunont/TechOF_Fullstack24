@@ -1,0 +1,17 @@
+
+
+.flex {
+    padding: 10px;
+    border: 2px solid tomato;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 200px;
+    
+}
+
+.flex div {
+    border: 2px solid blue;
+    font-size: 32px;
+    height: fit-content;
+}
