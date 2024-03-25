@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="city">
+    <input type="text" id="country">
+    <p id="result"></p>
+    <br>
+    <button onclick="printDetails()">Mostra os Detalhes!</button>
+
+    <script>
+
+        function printDetails(){
+            var city = document.getElementById('city').value;
+            var country = document.getElementById('country').value;
+
+            var result = 'A minha cidade é ' + city + ', e pertence a ' + country;
+            alert(result);
+            document.getElementById('result').innerText = result;
+        }
+
+    </script>
+</body>
+</html>

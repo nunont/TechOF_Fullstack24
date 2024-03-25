@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #4c0072;
+    --accent-color: #7e01bd;
+    --brighter-color: #a300ff;
+    --pink-color: #ff00a2;
+}
+
+.section {
+    height: 50vh;
+}
+
+#main {
+    background-image: linear-gradient(to left, var(--primary-color), var(--accent-color));
+    height: 100vh;
+}
+
+#nav {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 24px;
+}
+
+#nav a:hover {
+    background-color: var(--brighter-color);
+    box-shadow: 0 0 10px var(--brighter-color);
+}
+
+#nav a:nth-child(1) {
+    margin-left: 200px;
+}
+
+#home-info {
+    width: 100%;
+    height: 100%;
+}
+
+#home-info > div {
+    float: left;
+    width: 50%;
+}
+
+#home-image {
+    width: 100%;
+}
+
+#home-image img {
+    width: 80%;
+    margin: 10% 10%;
+}
+
+#home-text-content {
+    margin: auto;
+    align-items: center;
+    width: 80%;
+    margin-top: 25vh;
+
+}
+
+#home-text-content h1 {
+    font-size: 64px;
+    color: white;
+}
+
+#home-text-content button {
+    background-color: var(--pink-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: none;
+    margin-right: 20px;
+}
+
+#home-text-content button:hover {
+    background-color: var(--brighter-color);
+    box-shadow: 0 0 10px var(--brighter-color);
+    border: var(--brighter-color) 2px solid;
+    cursor: pointer;
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+#study-tracks {
+    height: fit-content;
+}
+#s-info {
+    width: 100%;
+    text-align: center;
+}
+
+#s-info hr {
+    width: 150px;
+    border: 1px solid var(--primary-color);
+}
+
+.row {
+} 
+
+.row > div {
+    float: left;
+    width: 25%;
+    display: block;
+}
+
+#tracks {
+}
+
+.track {
+    padding: 20px;
+    text-align: center;
+}
+
+.track img {
+    width: 35%;
+}
