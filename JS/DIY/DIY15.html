@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="counterloop()">Clica</button>
+    <p id="details"></p>
+    
+    <script>
+
+        function counterloop(){
+            var counter = 0;
+
+            for (var i = 0; i < 4; i++) {
+                var num = parseInt(prompt('Insira num'));
+
+                if (num % 2 == 0) {
+                    counter++;
+                }
+            }
+
+            document.getElementById("details").innerText = counter;
+        }
+
+    </script>
+
+</body>
+</html>

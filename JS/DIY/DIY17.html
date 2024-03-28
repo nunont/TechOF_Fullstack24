@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="calc()">Calculos</button>
+    <p id="sum"></p>
+    <p id="avg"></p>
+    <p id="above"></p>
+
+    <script>
+
+        function calc(){
+
+            var sum = 0;
+            var above = 0;
+            
+            for (var i = 0; i < 5; i++) {
+                var salary = parseInt(prompt('Insira um valor'));
+                sum = sum + salary;
+                
+                if (salary > 1000) {
+                    above++;
+                }
+            }
+
+            var avg = sum / 5;
+
+            document.getElementById("sum").innerText = sum;
+            document.getElementById("above").innerText = above;
+            document.getElementById("avg").innerText = avg;
+        }
+
+    </script>
+</body>
+</html>
