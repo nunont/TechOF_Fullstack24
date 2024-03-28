@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="lucky()">Clica Me</button>
+    <p id="details"></p>
+    
+    <script>
+
+        function lucky(){
+            var num = parseInt(prompt('Inisira um numero'));
+            var p = document.getElementById('details');
+
+            if (num == 777) {
+                p.innerText = '1 000 000$';
+                p.style.color = "blue";
+                p.style.backgroundColor = "yellow";
+                p.style.border = "1px solid green"
+            }
+            else {
+                p.innerText = 'Nuno Marques';
+                p.style.color = "yellow";
+                p.style.backgroundColor = "black";
+                p.style.border = "5px solid red"
+            }
+        }
+
+    </script>
+</body>
+</html>

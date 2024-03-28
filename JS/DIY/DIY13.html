@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button onclick="sum()">Soma</button>
+    <p id="details"></p>
+
+    <script>
+
+        function sum(){
+            var num1 = parseInt(prompt('Inisira o 1 numero'));
+            var num2 = parseInt(prompt('Inisira o 2 numero'));
+
+            var sum = num1 + num2;
+
+            var details = document.getElementById("details");
+            details.innerText = sum;
+
+            if (sum > 100) {
+                details.style.color = "blue";
+            }
+            else {
+                details.style.color = "red";
+            }
+        }
+
+    </script>
+</body>
+</html>

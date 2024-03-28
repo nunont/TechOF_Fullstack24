@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="num1">
+    <button onclick="checkSum()">Soma de 2 Digitos</button>
+
+    <script>
+        function checkSum(){
+            var num = parseInt(document.getElementById('num1').value);
+
+            //unit => 43 -> 43 % 10 = 3
+            //tens => 43 -> 43 / 10 = 4.3
+
+            if (num > 10 && num < 100) {
+                let unit = num % 10;
+                let tens = num / 10;
+
+                let sum = unit + tens; //4.3 + 3 = 7.3
+                let result = Math.floor(sum);
+                alert(result);
+            }
+            else {
+                alert('Erro o numero nao tem 2 casas')
+            }
+        }
+    </script>
+</body>
+</html>

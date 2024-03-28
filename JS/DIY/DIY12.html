@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="reset()">Reset</button>
+    <button onclick="enlarge()">Clica Me</button>
+    <br>
+    <p id="details"></p>
+    
+    <script>
+
+        function reset(){
+            var details = document.getElementById("details");
+            details.style.width = "100px";
+            details.style.backgroundColor = "yellow";
+            details.style.textAlign = "center";
+            details.innerText = "1";
+        }
+
+        function enlarge(){
+            var details = document.getElementById("details");
+
+            var width = details.offsetWidth;
+            width += 10;
+
+            details.innerText = width;
+            details.style.width = width + "px";
+
+            if (width > 500) {
+                document.body.style.backgroundColor = "brown";
+            }
+            else {
+                document.body.style.backgroundColor = "blue";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

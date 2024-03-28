@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="header">if, else</h1>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <button onclick="checkBiggest()">Maior Numero</button>
+    <p id="result"></p>
+    <script>
+
+        function checkBiggest(){
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+
+            if (a > b) {
+                document.getElementById('result').innerText = 'A é maior';
+            }
+            else if (b > a) {
+                document.getElementById('result').innerText = 'B é maior';
+            }
+            else {
+                document.getElementById('result').innerText = 'Os numeros sao iguais';
+            }
+
+        }
+
+    </script>
+</body>
+</html>
