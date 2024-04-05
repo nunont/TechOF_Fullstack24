@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="guessTheNumber()">Max</button>
+    <p id="result"></p>
+
+    <script>
+
+        function guessTheNumber(){
+            let size = parseInt(prompt('Insira o tamanho para o array'))
+
+            var nums = [];
+
+            for (let i = 0; i < size; i++) {
+                let temp = parseInt(prompt('Isira o numero na posição ' + i))
+                nums.push(temp)
+            }
+            
+            var guessNumber = parseInt(prompt('insira o numero para adivinhar'));
+            
+            alert(isTheNumberInside(nums, guessNumber));
+        }
+
+        const isTheNumberInside = (arr, guessNumber) => {
+            var check = arr.indexOf(guessNumber);
+
+            if (check > -1) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>

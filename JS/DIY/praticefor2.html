@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="doMathtable()">clica</button>
+    
+    <script>
+        
+        function doMathtable() {
+            let output = '';
+            for (var tabua = 1; tabua <= 10; tabua++) {
+
+                for(var multi = 1; multi <= 10; multi++) {
+                    let value = tabua * multi;
+                    output += value + ',';
+                }
+
+                output += '\n';
+
+            }
+
+            console.log(output)
+
+        }
+    </script>
+</body>
+</html>

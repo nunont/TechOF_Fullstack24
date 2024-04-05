@@ -1,0 +1,8 @@
+1.Dado um array de números, retorne a soma de todos os elementos.
+[10, 20 , 33, 44] => 107
+
+2. Dado um array de strings, retorne um novo array contendo o tamanho de cada string.
+['cao', 'gato', 'girafa', 'macaco'] => [3, 4, 6, 6]
+
+3. Dado um array de números, retorne um novo array contendo apenas os números únicos (sem repetição).
+[11, 12, 11, 12, 13, 14] => [11, 12, 13, 14]

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="doMathtable()">clica</button>
+    
+    <script>
+        
+        function doMathtable() {
+            let output = '';
+
+            var tabua = parseInt(prompt('insira a Tabua:'))
+            
+            for(var multi = 1; multi <= 10; multi++) {
+                let value = tabua * multi;
+                output += tabua + ' x ' + multi + ' = ' + value + '\n';
+            }
+
+            
+            console.log(output)
+
+            function sopas() {
+                tabua
+            }
+
+        }
+    </script>
+</body>
+</html>

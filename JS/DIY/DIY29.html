@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="maxClick()">Max</button>
+    <p id="result"></p>
+
+    <script>
+
+        function maxClick(){
+            let num1 = prompt();
+            let num2 = prompt();
+            let num3 = prompt();
+            
+            let nums = [parseInt(num1), parseInt(num2), parseInt(num3)]
+            
+            var result = maxBetween3(nums);
+            document.getElementById('result').innerText = result;
+        }
+
+        var maxBetween3=  function (arr) {
+            let result;
+
+
+            for (let i = 0; i < 3; i++) {
+                if (result == undefined || arr[i] > result)
+                {
+                    result = arr[i];
+                }
+            }
+
+            return result;
+        }
+
+    </script>
+</body>
+</html>

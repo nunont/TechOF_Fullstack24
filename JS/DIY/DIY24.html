@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="addNumbersToArray()">Add numbers to array</button>
+    <p id="result"></p>
+    <p id="result2"></p>
+    <script>
+        
+
+        function addNumbersToArray(){
+            let arr = [];
+
+            for (let i = 0; i < 5; i++) {
+                let num = prompt('Insira um numero');
+                arr.push(num)
+            }
+
+            var result = '';
+            for(let i = 0; i < 5; i++) {
+                result += arr[i] + ',';
+            }
+
+            document.getElementById('result').innerText = result;
+
+            var strArr = arr.join(', ')
+            document.getElementById('result2').innerText = strArr;
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>
