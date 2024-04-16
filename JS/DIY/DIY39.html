@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>My Friends List</h1>
+    <input type="text" id="name" placeholder="Name">
+    <button onclick="removeNames()">Remove Name</button>
+    <button onclick="addName()">Add Friend</button>
+
+    <ul id="items"> 
+        <li>Carlos</li>
+        <li>Joana</li>
+        <li>Ze</li>
+    </ul>
+
+    <script>
+
+        function removeNames(){
+            let nameToRemove = document.getElementById('name').value;
+
+            let listItems = document.getElementById('items').getElementsByTagName('li');
+            const itemsLength = listItems.length;
+
+            for (let i = 0; i < itemsLength; i++) {
+                const li = listItems[i];
+
+                if (li.innerText == nameToRemove) {
+                    li.parentNode.removeChild(li);
+                    i--;
+                }
+                
+            }
+        }
+
+        function addName() {
+            let nameToAdd = document.getElementById('name').value;
+            let listItems = document.getElementById('items');
+
+            let li = document.createElement('li');
+            li.innerText = nameToAdd;
+
+            listItems.appendChild(li);
+
+        }
+
+        
+
+    </script>
+</body>
+</html>
