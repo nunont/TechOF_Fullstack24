@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Ola bom dia</p>
+
+    <script>
+        const colors = (range, arr) => {
+            const random = Math.floor(Math.random() * range); // 0-4
+            document.body.style.backgroundColor = arr[random];
+        };
+        setTimeout(colors, 3000,4, ["red", "blue", "green", "black"]);
+
+/*         setInterval(() => alert('Hello'), 1000);
+ */
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="timer">00:00:00</h1>
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button>
+    <button onclick="resetTimer()">Reset Timer</button>
+
+    <script>
+        var timer = document.getElementById('timer');
+
+        var seconds = 0;
+        var minutes = 0;
+        var hours = 0;
+
+        const timerCounter = () => {
+            seconds++;
+
+            if (seconds == 60) {
+                seconds = 0;
+                minutes++;
+            }
+
+            if (minutes == 60) {
+                minutes = 0;
+                hours++;
+            }
+
+            var secondsO, minutesO, hoursO;
+            if (seconds < 10){
+                secondsO = '0'+seconds;
+            }
+            else {
+                secondsO = seconds;
+            }
+
+            minutesO = minutes < 10 ? '0' + minutes : minutes;
+            hoursO = hours < 10 ? '0' + hours : hours;
+
+            let output = `${hoursO}:${minutesO}:${secondsO}`;
+            timer.innerText = output;
+        };
+
+        var timerIntervalId = 0;
+        const startTimer = () => {
+            timerIntervalId = setInterval(timerCounter, 1000);
+        }
+
+        const stopTimer = () => {
+            clearInterval(timerIntervalId)
+        }
+
+        const resetTimer = () => {
+            hours = 0;
+            minutes = 0;
+            seconds = 0;
+
+            stopTimer();
+            startTimer();
+        };
+
+    </script>
+    
+</body>
+</html>

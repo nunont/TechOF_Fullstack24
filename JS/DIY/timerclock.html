@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="clock">00:00:00</h1>
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button>
+    
+    <script>
+
+        var seconds = 0;
+        var minutes = 0;
+        var hours = 0;
+        var clock = document.getElementById('clock');
+
+        const timerUpdate = () => {
+            seconds++;
+
+            if (seconds === 60) {
+                seconds = 0;
+                minutes++;
+            }
+            if (minutes === 60) {
+                minutes = 0;
+                hours++;
+            }
+
+            let output = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+            clock.innerText = output;
+        };
+        var timerInterval = 0;
+        const startTimer = () => {
+            clock.style.color = 'black';
+            timerInterval = setInterval(timerUpdate, 1000);
+        };
+
+        const stopTimer = () => {
+            clock.style.color = 'red';
+            clearInterval(timerInterval);
+        };
+
+    </script>
+</body>
+</html>
