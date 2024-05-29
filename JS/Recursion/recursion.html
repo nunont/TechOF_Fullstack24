@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function sumRecursive(n) {
+
+            if (n == 1) {
+                return 1;
+            }
+
+            return n + sumRecursive(n-1);
+
+        }
+
+        function sumEvenRecursive(n) {
+
+            if (n == 0) {
+                return 0;
+            }
+            if (n == 1 ){
+                return 0;
+            }
+            if (n % 2 == 0) {
+                return n + sumEvenRecursive(n - 2);
+            }
+
+            return n + sumEvenRecursive(n - 1);
+
+        }
+
+        function sumEvenRecursive2(n) {
+            let value = 0;
+            if (n == 1 ){
+                return 0;
+            }
+            if (n % 2 == 0) {
+                value = n;
+            }
+
+            return value + sumEvenRecursive2(n - 1);
+        }
+
+        console.log(sumRecursive(10))
+        console.log(sumEvenRecursive(10))
+        console.log(sumEvenRecursive2(10))
+    </script>
+
+</body>
+</html>

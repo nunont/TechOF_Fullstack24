@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        class Vehicle {
+            constructor(maker, model, year, name, nrWheels) {
+                this.maker = maker;
+                this.model = model;
+                this.year = year;
+                this.name = name;
+                this.nrWheels = nrWheels;
+            }
+        }
+
+        class Car extends Vehicle {
+            constructor(maker, model, year, nrDoors) {
+                super(maker, model, year, 'Car', 4);
+                this.nrDoors = nrDoors;
+            }
+        }
+
+        class Motocycle extends Vehicle {
+            constructor(maker, model, year, engineSize, wheelSize, nrWheels) {
+                super(maker, model, year, 'Motocycle', nrWheels);
+                this.engineSize = engineSize;
+                this.wheelSize = wheelSize;
+            }
+        }
+
+        var car = new Car('Toyota', 'Corolla', 2020, 4);
+        console.log(car);
+        var moto = new Motocycle('Honda', 'CBR', 2014, 1000, 17, 2);
+        console.log(moto);
+        var car2 = new Car('Ford', 'Focus', 2018, 4);
+        console.log(car2);
+        var car3 = new Car('BMW', 'X5', 2019, 4);
+        console.log(car3);
+        var moto2 = new Motocycle('Yamaha', 'R1', 2015, 1000, 17, 3);
+        console.log(moto2);
+    </script>
+    
+</body>
+</html>

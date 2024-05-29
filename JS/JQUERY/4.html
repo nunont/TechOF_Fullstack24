@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+
+        .magic {
+            color: #43f34e;
+            font-weight: 500;
+            background-color: #ee3467;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>TechOf 2024 - Fullstack</h1>
+    <button id="add">Add Class</button>
+    <button id="remove">Remove Class</button>
+    <button id="toggle">Toggle Class</button>
+
+    <script>
+
+        $(() => {
+
+            let h1 = $('h1');
+
+            $('#add').click(() => {
+                h1.addClass('magic');
+            })
+
+            $('#remove').click(() => {
+                h1.removeClass('magic')
+            })
+
+            $('#toggle').click(() => {
+                h1.toggleClass('magic')
+            })
+
+        })
+
+    </script>
+    
+</body>
+</html>

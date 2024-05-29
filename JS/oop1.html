@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function Person(firstName, lastName, age, father, mother, childreen) {
+            this.name = { firstName : firstName, lastName : lastName };
+            this.age = age;
+            this.father = father;
+            this.mother = mother;
+            this.childreen = childreen;
+
+            this.fullName = this.name.firstName + ' ' + this.name.lastName;
+
+            this.addChildreen = childreenName => {
+                this.childreen.push(childreenName);
+            }
+
+            this.toString = () => this.name.firstName ;
+
+        }
+
+        const nuno = new Person('Nuno', 'Marques', 25, 'Ze', 'Maria', [])
+        
+        const nuno2 = new Person('Nuno', 'da Silva', 45, '', '', ['Debora']);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="ctyInput">
+    <button id="btn" onclick="getCountry()">Get Country</button>
+    <div id="country">
+        <p id="countryName"></p>
+        <img src="" alt="" id="countryFlag">
+    </div>
+
+    <script>
+
+        const ctyInput = document.getElementById('ctyInput');
+        const countryName = document.getElementById('countryName');
+        const countryFlag = document.getElementById('countryFlag');
+
+        function getCountry() {
+            
+            let country = ctyInput.value;
+
+            fetch(`https://restcountries.com/v2/name/${country}`)
+            .then(response => response.json())
+            .then(data => {
+                let countryResult = data[0];
+                countryName.innerHTML = countryResult.name;
+                countryFlag.src = countryResult.flag;
+            })
+        }
+
+    </script>
+    
+</body>
+</html>

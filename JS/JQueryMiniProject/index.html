@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="d-flex jc-center">
+
+        <div class="d-flex flex-column gap-small" style="width: 50%">
+            <div class="d-inline-flex ai-center jc-center gap-tiny">
+                <input type="text" id="productI">
+                <button id="btnAdd" class="add-button">
+                    <span class="material-symbols-outlined">add</span>
+                </button>
+            </div>
+
+            <div class="d-flex flex-column jc-center ai-center w-100 gap-small">
+                <div class="fs-32 fw-500">
+                    My Shooping List
+                </div>
+
+                <div id="shoppingList" class="d-flex flex-column jc-center" style="width: 30%;">
+                    <div class="product-item">
+                        Cenouras
+                        <button class="delete-button">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

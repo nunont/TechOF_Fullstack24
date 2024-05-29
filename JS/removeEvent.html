@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="e1" style="background-color: red;width: fit-content;display: flex;">O elemento E1</p>
+    <p id="e2" style="background-color: green;width: fit-content;display: flex;">O elemento E2</p>
+
+    <p id="p1" style="display: flex;"> Ola O meu é </p>
+    <p id="p2" style="display: flex;"> Nuno</p>
+
+
+    <script>
+
+        var e1 = document.getElementById('e1');
+        var e2 = document.getElementById('e2');
+
+        const eventE1 = () => {
+            alert('Mouse entrou no e1')
+            e1.removeEventListener('mouseenter', eventE1)
+        }
+
+        e1.addEventListener('mouseenter', eventE1)
+        e2.onmouseenter = () => alert('Mouse enter in e2');
+
+        var p1 = document.getElementById('p1');
+        var p2 = document.getElementById('p2');
+
+        p1.addEventListener('mouseenter', () => p2.style.backgroundColor = 'pink')
+        p1.addEventListener('mouseleave', () => p2.style.background = 'none')
+    </script>
+
+</body>
+</html>

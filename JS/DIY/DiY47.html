@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        class Shape {
+            constructor(x, y, color) {
+                this.x = x;
+                this.y = y;
+                this.color = color;
+            }
+
+            move(x, y) {
+                this.x += x;
+                this.y += y;
+            }
+        }
+
+        class Rectangle extends Shape {
+            constructor(x, y, color, w, h) {
+                super(x,y,color)
+                this.w = w;
+                this.h = h;
+            }
+
+            area() {
+                return this.w * this.h;
+            }
+        }
+
+        var shape1 = new Shape(50, 30, 'red')
+        shape1.move(50, 60);
+        console.log(shape1)
+
+        var rect = new Rectangle(100, 200, 'red', 300, 300);
+        console.log(rect)
+        alert(rect.area())
+
+
+    </script>
+    
+</body>
+</html>

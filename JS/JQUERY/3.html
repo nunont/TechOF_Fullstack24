@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1>TechOf 2024</h1>
+    <input type="text" id="txt">
+    <button id="btn">change</button>
+
+    <script>
+
+        $(() => {
+
+            $("#btn").click(() => {
+                let input = $('#txt');
+                let value = input.val();
+
+                $('h1').text(value);
+
+                input.val('')
+            })
+
+        });
+
+
+    </script>
+    
+</body>
+</html>
